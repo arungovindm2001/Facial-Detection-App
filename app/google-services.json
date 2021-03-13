@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "622973026664",
+    "project_id": "camera-3657a",
+    "storage_bucket": "camera-3657a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622973026664:android:e18e507079a63f204056dd",
+        "android_client_info": {
+          "package_name": "com.example.facialdetectionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622973026664-qcpm1eaqj84ppsk3mjplkemrod6be3ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsqnAHwq5c3BR8Ud76-B7Fsuovw2-Y_lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622973026664-qcpm1eaqj84ppsk3mjplkemrod6be3ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

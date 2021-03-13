@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/detect_face_button">
+
+        <com.example.facialdetectionapp.Helper.GraphicOverlay
+            android:id="@+id/graphic_overlay"
+            android:layout_above="@+id/detect_face_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </com.wonderkiln.camerakit.CameraView>
+
+    <Button
+        android:id="@+id/detect_face_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:text="Detect Face"
+        android:textColor="@color/white" />
+
+  </RelativeLayout>
