@@ -36,8 +36,8 @@ import static dmax.dialog.SpotsDialog.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button faceDetectButton;
-    private GraphicOverlay graphicOverlay;
+    private Button faceDetectButton,retakeButton;
+    private GraphicOverlay graphicOverlay, graphicOverlayRetake;
     private CameraView cameraView;
     AlertDialog alertDialog;
 
@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         faceDetectButton = findViewById(R.id.detect_face_button);
+        retakeButton = findViewById (R.id.retake_button);
         graphicOverlay = findViewById(R.id.graphic_overlay);
+        graphicOverlayRetake = findViewById((R.id.graphic_overlay_retake));
         cameraView = findViewById(R.id.camera_view);
 
         alertDialog = new SpotsDialog.Builder()
@@ -62,6 +64,16 @@ public class MainActivity extends AppCompatActivity {
                 cameraView.start();
                 cameraView.captureImage();
                 graphicOverlay.clear();
+
+            }
+        });
+
+        retakeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                graphicOverlayRetake.clear();
+                retakeButton.setVisibility(View.INVISIBLE);
+                faceDetectButton.setVisibility(View.VISIBLE);
             }
         });
 
@@ -84,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
                 cameraView.stop();
 
                 processFacedetection(bitmap);
+
+                faceDetectButton.setVisibility (View.INVISIBLE);
+                retakeButton.setVisibility (View.VISIBLE);
 
             }
 
@@ -122,11 +137,12 @@ public class MainActivity extends AppCompatActivity {
         int counter = 0;
         for (FirebaseVisionFace face: firebaseVisionFaces) {
             Rect rect = face.getBoundingBox();
-            RectOverlay rectOverlay = new RectOverlay(graphicOverlay, rect);
+            RectOverlay rectOverlay = new RectOverlay(graphicOverlayRetake, rect);
 
-            graphicOverlay.add(rectOverlay);
+            graphicOverlayRetake.add(rectOverlay);
             counter = counter + 1;
         }
+        Toast.makeText(MainActivity.this, counter+" faces found",Toast.LENGTH_SHORT).show();
         alertDialog.dismiss();
     }
 

@@ -17,17 +17,47 @@
             android:id="@+id/graphic_overlay"
             android:layout_above="@+id/detect_face_button"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"/>
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:keepScreenOn="true"/>
 
     </com.wonderkiln.camerakit.CameraView>
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view_retake"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/retake_button">
+
+    <com.example.facialdetectionapp.Helper.GraphicOverlay
+        android:id="@+id/graphic_overlay_retake"
+        android:layout_above="@+id/retake_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"/>
+
+    </com.wonderkiln.camerakit.CameraView>
+
 
     <Button
         android:id="@+id/detect_face_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/black"
-        android:text="Detect Face"
-        android:textColor="@color/white" />
+        android:background="@drawable/custom_button"
+        android:text="@string/detect_face"
+        android:textColor="@color/white"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/retake_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_button"
+        android:text="@string/retake"
+        android:textColor="@color/white"
+        android:visibility="invisible"/>
 
   </RelativeLayout>

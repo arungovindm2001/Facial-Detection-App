@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FacialDetectionApp" >
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
 
             <meta-data
                 android:name="com.google.firebase:firebase-ml-vision.DEPENDENCIES"

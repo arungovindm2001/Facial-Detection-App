@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Facial Detection App</string>
+    <string name="detect_face">Detect Face</string>
+    <string name="retake">Retake</string>
 </resources>
