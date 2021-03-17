@@ -6,7 +6,7 @@ This app is purely on-device and you don't need internet for the app to work.
 <br/>
 Displays the face statistics after snapping the photo. The photo doesnt get saved in your phone so you don't have to worry about storage! 😛
 
-## Screenshot
+## Screenshots
 <p float="left">
   <img src="/images/Screenshot 1.jpg" width="250" height="488" />
   <img src="/images/Screenshot 2.jpg" width="250" height="488" />
