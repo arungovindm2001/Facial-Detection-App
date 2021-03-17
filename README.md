@@ -4,11 +4,8 @@ Detect faces easily using this Facial Detection Android App. Written purely in J
 The API is purely on-device and you don't need internet for the app to work.
 
 ## Screenshot
-<p float="left">
-	<img src="images/Screenshot 1.jpg" width="250" height="488">
-	<img src="images/Screenshot 2.jpg" width="250" height="488">
-	<img src="images/Screenshot 3.jpg" width="250" height="488">
-</p>
+
+![Screenshot of the App](/images/Screenshot.jpg)
 
 ## Installation
 
