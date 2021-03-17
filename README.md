@@ -1,11 +1,17 @@
 # Facial Detection App
 
-Detect faces easily using this Facial Detection Android App. Written purely in Java, this app uses the Google Firebase ML Kit - a mobile SDK that is powerful yet easy-to-use package.
-The API is purely on-device and you don't need internet for the app to work.
+Detect faces easily using this Facial Detection Android App. Written purely in Java, this app uses the [Google Firebase ML Kit](https://firebase.google.com/docs/ml-kit) - a mobile ML SDK that is powerful yet easy-to-use package and the [Wonderkiln CameraKit](https://github.com/CameraKit/camerakit-android) - an easy to use android library.
+<br/>
+This app is purely on-device and you don't need internet for the app to work.
+<br/>
+Displays the face statistics after snapping the photo. The photo doesnt get saved in your phone so you don't have to worry about storage! 😛
 
 ## Screenshot
-
-![Screenshot of the App](/images/Screenshot.jpg)
+<p float="left">
+  <img src="/images/Screenshot 1.jpg" width="250" height="488" />
+  <img src="/images/Screenshot 2.jpg" width="250" height="488" />
+  <img src="/images/Screenshot 3.jpg" width="250" height="488" />
+</p>
 
 ## Installation
 
@@ -25,4 +31,4 @@ The API is purely on-device and you don't need internet for the app to work.
  5. Your device should be present on the virtual devices list.
  6. Run the app. The app will open in your phone. DONE!!
  
- WARNING: The app is still in development stage. You might run into some issues while installing.
+ **WARNING:** The app is still in development stage. You might run into some issues while installing.
